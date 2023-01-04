@@ -1,0 +1,108 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;    
+    font-size: 14px; 
+    font-weight: 300;
+    padding-right: 10%; 
+    padding-left: 10%; 
+    padding-top: 12%; 
+    line-height: 1.6;
+    background: #F9F9F9;
+}
+
+.in_row { display: flex; padding-top: 20px; }
+.left { width: 470px; padding-right: 7%;}
+.right { width: 400px;}
+
+#index_title {
+    width: 690px;
+}
+ 
+a {text-decoration: none; color: #A0A0A0; border-bottom: 1px solid #BBBBBB;}
+a:hover {  transition: .3s ease-in-out; color: #000000; border-bottom-color: #CFCFCF;}
+
+.intro {
+    font-size: 200%; 
+    font-family: 'Noto Serif KR', serif; 
+    line-height: 1.4;
+
+}
+
+@media screen and (max-width: 800px) {
+    #index_title {
+        width: 100%;
+    }
+    .left { width: 100%  !important; }
+    .right { width: 100% !important; }
+
+    .in_row {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+        margin: auto;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .intro { font-size: 300%; }
+}
+  
+/* slideup animation - http://jennywen.ca/ source code */
+.slide-up {
+    animation: fadeInUp 0.8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animtion: slideup 0.8s;
+    animation-timing-function: spring(1 200 10 5);
+    -webkit-animation-timing-function: spring(1 200 10 5);
+  }
+  .a1.slide-up {
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+  }
+  
+  .a2.slide-up {
+    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+  }
+
+.fade-in {
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-timing-function: spring(1 200 10 5);
+    -webkit-animation-timing-function: spring(1 200 10 5);
+  }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    } 100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp
+  {
+    0%  {
+      opacity: 0;
+      transform: translateY(60px);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+@keyframes slidedown
+{
+  0%  {
+    opacity: 0.2;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
